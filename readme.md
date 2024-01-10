@@ -25,7 +25,6 @@ The state of the entire firmware is pinned in my `west`
   [zmk-helpers](https://github.com/urob/zmk-helpers)
 - Fully automated, nix-powered [local build environment](#local-build-environment)
 
-![](draw/keymap.png)
 ([Click here](https://raw.githubusercontent.com/urob/zmk-config/refs/heads/main/draw/base.svg)
 for a breakdown by layer - powered by
 [keymap-drawer](https://github.com/caksoylar/keymap-drawer).)
@@ -433,7 +432,7 @@ remaining issues:
     E.g, if your WPM is 70 or larger, then the default of 150ms (=10500/70)
     should work well. The rule of thumb is based on an average character length
     of 4.7 for English words. Taking into account 1 extra tap for `space`, this
-    yields a minimum `require-prior-idle-ms` of (60 _ 1000) / (5.7 _ x) ≈ 10500
+    yields a minimum `require-prior-idle-ms` of (60 _1000) / (5.7_ x) ≈ 10500
     / x milliseconds. The approximation errs on the safe side, as in practice
     home row taps tend to be faster than average.
 
