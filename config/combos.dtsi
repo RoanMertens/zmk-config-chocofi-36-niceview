@@ -22,9 +22,9 @@
 #define LOG_OFF    &kp          LC(LG(Q))
 
 /* Horizontal combos - left hand */
-ZMK_COMBO(def,      &to DEF,       LM4 LM3,         ALPH SYM NUM, COMBO_TERM_FAST)
-ZMK_COMBO(repeat,HRC_REPEAT,       LM2 LM1,     DEF ALPH SYM NUM, COMBO_TERM_FAST)
-ZMK_COMBO(log_off,  LOG_OFF,       LB4 LB3,     DEF ALPH SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(l_def,      &to DEF,       LM4 LM3,         ALPH SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(l_repeat,HRC_REPEAT,       LM2 LM1,     DEF ALPH SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(l_log_off,  LOG_OFF,       LB4 LB3,     DEF ALPH SYM NUM, COMBO_TERM_FAST)
 
 // ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
 // ZMK_COMBO(ret,   &kp RETURN,    LT2 LT1,     DEF NAV NUM, COMBO_TERM_FAST)
@@ -37,9 +37,9 @@ ZMK_COMBO(log_off,  LOG_OFF,       LB4 LB3,     DEF ALPH SYM NUM, COMBO_TERM_FAS
 // ZMK_COMBO(paste, &kp LS(INS),   LB2 LB1,     DEF NAV NUM, COMBO_TERM_FAST)
 
 /* Horizontal combos - right hand */
-ZMK_COMBO(def,      &to DEF,       RM4 RM3,         ALPH SYM NUM, COMBO_TERM_FAST)
-ZMK_COMBO(repeat,HRC_REPEAT,       RM2 RM1,     DEF ALPH SYM NUM, COMBO_TERM_FAST)
-ZMK_COMBO(log_off,  LOG_OFF,       LB4 LB3,     DEF ALPH SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(r_def,      &to DEF,       RM4 RM3,         ALPH SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(r_repeat,HRC_REPEAT,       RM2 RM1,     DEF ALPH SYM NUM, COMBO_TERM_FAST)
+ZMK_COMBO(r_log_off,  LOG_OFF,       LB4 LB3,     DEF ALPH SYM NUM, COMBO_TERM_FAST)
 
 // ZMK_COMBO(bspc,  &kp BSPC,      RT1 RT2,     DEF NAV NUM, COMBO_TERM_FAST)
 // ZMK_COMBO(del,   &kp DEL,       RT2 RT3,     DEF NAV NUM, COMBO_TERM_FAST)
