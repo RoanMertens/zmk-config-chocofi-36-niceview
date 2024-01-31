@@ -202,13 +202,13 @@ ZMK_BEHAVIOR(win_sleep, macro,
 )
 
 // misc aliases
-#define SAVE_PRNT   &kp LG(PSCRN)            // Save printscreen
-#define CPY         &kp LC(INS)              // Copy selection
-#define PST         &kp LS(INS)              // Paste selection
-#define UND         &kp LC(Z)                // undo
-#define RED         &kp LC(LS(Z))            // redo
-#define ESC_MEH     ___
-// #define ESC_MEH     &hmr LC(LS(LALT)) ESC     // Escape | Hold: MEH
+#define SAVE_PRNT   &kp LG(PSCRN)             // Save printscreen
+#define CPY         &kp LC(INS)               // Copy selection
+#define PST         &kp LS(INS)               // Paste selection
+#define UND         &kp LC(Z)                 // undo
+#define RED         &kp LC(LS(Z))             // redo
+#define ESC_MEH     &hmr LC(LS(LALT)) ESC     // Escape | Hold: MEH
+#define FINDER      &kp LG(SPACE)             // Open Finder
 
 /* Keymap */
 
@@ -216,18 +216,15 @@ ZMK_CONDITIONAL_LAYER(NUM SYM, SYS)  // NUM + SYM --> SYS
 
 ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬──────────────┬───────────────────┬──────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬──────────────╮ ╭─────╮
-    XXX      XXX           XXX           XXX            &kp C_VOL_UP        &kp C_BRI_UP     CPY           UND           &to ALPH      RED           PST              XXX
+    XXX      XXX           XXX           &kp LC(LA(F))  &kp C_VOL_UP        &kp C_BRI_UP     CPY           UND           &to ALPH      RED           PST              XXX
 //├──────┤ ├─────────────┼─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤ ├─────┤
-    XXX      &sk LSHFT     &sk LCTRL     &sk LALT       &hml LGUI C_VOL_DN  &kp C_BRI_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT     XXX              XXX
+    XXX      &sk LSHFT     &sk LCTRL     &sk LALT       &hml LGUI C_VOL_DN  &kp C_BRI_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT     &kp LG(SPACE)    XXX
 //├──────┤ ├─────────────┼─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤ ├─────┤
-    XXX      XXX           XXX           XXX            &kp C_MUTE          XXX              U_MS_L        U_MS_D        U_MS_U        U_MS_R        U_BTN2           XXX
+    XXX      XXX           XXX           XXX            &kp C_MUTE          &kp LC(LA(B))    U_MS_L        U_MS_D        U_MS_U        U_MS_R        U_BTN2           XXX
 //╰──────╯ ╰─────────────┴─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴──────────────╯ ╰─────╯
                                          ESC_MEH        &lt NUM TAB         &lt_spc SYM 0    &lt SYM BSPC  &lt NUM RET   U_BTN1
 //                                     ╰──────────────┴───────────────────┴──────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
-// &kp LC(LA(f))  <-- this is to go back a word
-// &kp LC(LA(b))  <-- this is to go forward a word
-// &kp LG(SPACE)  <-- open finder mac
 
 ZMK_LAYER(alph,
 //╭───────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬───────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────────╮ ╭───────╮
