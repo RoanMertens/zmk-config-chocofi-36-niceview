@@ -216,7 +216,6 @@ ZMK_BEHAVIOR(win_sleep, macro,
 ZMK_CONDITIONAL_LAYER(NUM SYM, SYS)  // NUM + SYM --> SYS
 
 ZMK_LAYER(base,
-    XXX      XXX           XXX           XXX            &kp C_VOL_UP        &kp C_BRI_UP     CPY           UND           &to ALPH      RED           PST              XXX
           XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
           XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
           XXX XXX XXX XXX XXX XXX
