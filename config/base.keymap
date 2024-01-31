@@ -216,11 +216,10 @@ ZMK_BEHAVIOR(win_sleep, macro,
 ZMK_CONDITIONAL_LAYER(NUM SYM, SYS)  // NUM + SYM --> SYS
 
 ZMK_LAYER(base,
-          XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
 //╭──────╮ ╭─────────────┬─────────────┬──────────────┬───────────────────┬──────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬──────────────╮ ╭─────╮
-//    XXX      XXX           XXX           XXX            &kp C_VOL_UP        &kp C_BRI_UP     CPY           UND           &to ALPH      RED           PST              XXX
+    XXX      XXX           XXX           XXX            &kp C_VOL_UP        &kp C_BRI_UP     XXX           XXX           &to ALPH      XXX           XXX              XXX
 //├──────┤ ├─────────────┼─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤ ├─────┤
-   XXX      &sk LSHFT     &sk LCTRL     &sk LALT       &hml LGUI C_VOL_DN  &kp C_BRI_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT     XXX              XXX
+    XXX      &sk LSHFT     &sk LCTRL     &sk LALT       &hml LGUI C_VOL_DN  &kp C_BRI_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT     XXX              XXX
 //├──────┤ ├─────────────┼─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤ ├─────┤
     XXX      XXX           XXX           XXX            &kp C_MUTE          XXX              U_MS_L        U_MS_D        U_MS_U        U_MS_R        U_BTN2           XXX
 //╰──────╯ ╰─────────────┴─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴──────────────╯ ╰─────╯
