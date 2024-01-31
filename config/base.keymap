@@ -203,8 +203,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 
 // misc aliases
 #define SAVE_PRNT   &kp LG(PSCRN)            // Save printscreen
-#define COPY        &kp LC(INS)              // Copy selection
-#define PASTE       &kp LS(INS)              // Paste selection
+#define CPY         &kp LC(INS)              // Copy selection
+#define PST         &kp LS(INS)              // Paste selection
 #define UNDO        &kp LC(z)                // undo
 #define REDO        &kp LC(LS(z))            // redo
 #define ESC_MEH     &mhr LC(LS(LALT)) ESC     // Escape | Hold: MEH
@@ -215,7 +215,7 @@ ZMK_CONDITIONAL_LAYER(NUM SYM, SYS)  // NUM + SYM --> SYS
 
 ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬──────────────┬───────────────────┬──────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬──────────────╮ ╭─────╮
-    XXX      XXX           XXX           &kp LC(LA(f))  &kp C_VOL_UP        &kp C_BRI_UP     COPY          UNDO          &to ALPH      REDO          PASTE            XXX
+    XXX      XXX           XXX           &kp LC(LA(f))  &kp C_VOL_UP        &kp C_BRI_UP     CPY          UNDO          &to ALPH      REDO          PST            XXX
 //├──────┤ ├─────────────┼─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤ ├─────┤
     XXX      &sk LSHFT     &sk LCTRL     &sk LALT       &hmr LGUI C_VOL_DN  &kp C_BRI_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT     &kp LG(SPACE)    XXX
 //├──────┤ ├─────────────┼─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤ ├─────┤
