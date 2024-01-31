@@ -205,9 +205,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define SAVE_PRNT   &kp LG(PSCRN)            // Save printscreen
 #define CPY         &kp LC(INS)              // Copy selection
 #define PST         &kp LS(INS)              // Paste selection
-#define UND         &kp LC(Z)            // undo
-#define RED         ___
-// #define RED         &kp LC(LS(Z))            // redo
+#define UND         &kp LC(Z)                // undo
+#define RED         &kp LC(LS(Z))            // redo
 #define ESC_MEH     ___
 // #define ESC_MEH     &hmr LC(LS(LALT)) ESC     // Escape | Hold: MEH
 
