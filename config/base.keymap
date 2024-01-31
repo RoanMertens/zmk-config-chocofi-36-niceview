@@ -201,29 +201,15 @@ ZMK_BEHAVIOR(win_sleep, macro,
     bindings = <&kp LG(X) &kp U &kp S>;
 )
 
-ZMK_BEHAVIOR(red, macro,
-    wait-ms = <0>;
-    tap-ms = <1>;
-    bindings = <&macro_press &kp LCTRL &kp LSHFT>
-             , <&macro_tap &kp z>
-             , <&macro_release &kp LCTRL &kp LSHFT>;
-)
-
-ZMK_BEHAVIOR(esc_meh, macro,
-    wait-ms = <0>;
-    tap-ms = <1>;
-    bindings = <&macro_press &kp LCTRL &kp LSHFT &kp LALT>
-             , <&macro_tap &kp ESC>
-             , <&macro_release &kp LCTRL &kp LSHFT &kp LALT>;
-)
-
 // misc aliases
 #define SAVE_PRNT   &kp LG(PSCRN)            // Save printscreen
 #define CPY         &kp LC(INS)              // Copy selection
 #define PST         &kp LS(INS)              // Paste selection
 #define UND         &kp LC(z)                // undo
+#define RED         ___
 // #define RED         &kp LC(LS(z))            // redo
-// #define ESC_MEH     &mhr LC(LS(LALT)) ESC     // Escape | Hold: MEH
+#define ESC_MEH     ___
+// #define ESC_MEH     &hmr LC(LS(LALT)) ESC     // Escape | Hold: MEH
 
 /* Keymap */
 
@@ -235,7 +221,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤ ├─────┤
     XXX      &sk LSHFT     &sk LCTRL     &sk LALT       &hml LGUI C_VOL_DN  &kp C_BRI_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT     &kp LG(SPACE)    XXX
 //├──────┤ ├─────────────┼─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼──────────────┤ ├─────┤
-    XXX      XXX           XXX           XXX            &kp C_MUTE          &kp LC(LA(B))    U_MS_L        U_MS_D        U_MS_U        U_MS_R        U_BTN2           XXX
+    XXX      XXX           XXX           XXX            &kp C_MUTE          &kp LC(LA(b))    U_MS_L        U_MS_D        U_MS_U        U_MS_R        U_BTN2           XXX
 //╰──────╯ ╰─────────────┴─────────────┼──────────────┼───────────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴──────────────╯ ╰─────╯
                                          &esc_meh       &lt NUM TAB         &lt_spc SYM 0    &lt SYM BSPC  &lt NUM RET   U_BTN1
 //                                     ╰──────────────┴───────────────────┴──────────────╯ ╰─────────────┴─────────────┴─────────────╯
